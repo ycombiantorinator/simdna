@@ -52,8 +52,7 @@ def do(options):
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--prefix")
-    parser.add_argument("--pathToMotifs",
-        default=simdna.ENCODE_MOTIFS_PATH)
+    parser.add_argument("--pathToMotifs", default=simdna.ENCODE_MOTIFS_PATH)
     parser.add_argument("--bestHit", action="store_true")
     parser.add_argument("--motifNames", type=str, nargs='+', required=True)
     parser.add_argument("--max-motifs",type=int, required=True)
